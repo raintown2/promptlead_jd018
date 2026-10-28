@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "raintown2-promptlead_jd018"
+version = "0.1.0"
+description = "通过字符级与结构级特征识别Prompt 工程负责人·评测集泄漏与过拟合的痕迹，给出密度与命中位置"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [{ name = "raintown2" }]
+keywords = ["cli", "analysis", "observability", "evaluation"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Utilities",
+]
+
+[project.urls]
+Homepage = "https://raintown2.github.io"
+Repository = "https://github.com/raintown2/promptlead_jd018"
+Issues = "https://github.com/raintown2/promptlead_jd018/issues"
+
+[project.scripts]
+promptlead_jd018 = "promptlead_jd018:main"
+
+[tool.setuptools]
+py-modules = ["promptlead_jd018"]
